@@ -1,17 +1,29 @@
-# Tutorial on Different Image Classification Networks applied to Aircraft Dataset
+# IBM Deep Learning & Neural Networks with Keras - Aircraft Image Classification Final Project
 
-![image info](./pics/Easy_Hard.png)
 
-## Objective
 
-Compare the classification accuracy of a simple built-from-scratch CNN model to the pretrained CNN models, ResNet-152 and VGG-16, using the FGVC Aircraft image dataset. 
+## Project Overview
+I completed this project as part of IBM's Deep Learning & Neural Networks with Keras AI Engineer Professional Certificate course. 
+
+Aircraft damage detection is essential for maintaining the safety and longevity of aircraft. Traditional manual inspection methods are time-consuming and prone to human error. The goal of this project was to automate the classification of aircraft damage into two categories: "dent" and "crack." I used feature extraction with a pre-trained VGG16 model to classify the damage from aircraft images. Additionally, we will use a pre-trained Transformer model to generate captions and summaries for the images.
+
+## Aim of the Project
+This project aims to develop an automated model that accurately classifies aircraft damage from images. This model will be applicable in real-world damage detection within the aviation industry, as the data I used was from the FGVC Aircraft Benchmark. Furthermore, the project will showcase how we can use a Transformer-based model to caption and summarize images, providing a detailed description of the damage.
+
+The goal was to compare the classification accuracy of a simple built-from-scratch CNN model to the pretrained CNN models, ResNet-152 and VGG-16, using the FGVC Aircraft image dataset. 
 
 *  Examine classification for different subsets of the aircraft families
 *  Demonstrate how to track the loss and accuracy during training and validation using Tensorboard
+*  Visualize the dataset
+*  Train a deep neural network to classify images of the different aircraft models (CNN, ResNet152, VGG16)
 
-We want to 
-1. visualize the dataset
-2. train a deep neural network to classify images of the different aircraft models (CNN, ResNet152, VGG16)
+## Final Output
+A trained model capable of classifying aircraft images into "dent" and "crack" categories, enabling automated aircraft damage detection.
+A Transformer-based model that generates captions and summaries of images
+
+
+
+
 
 ---------------------------------------
 
@@ -50,7 +62,7 @@ The dataset is discussed in the paper "Fine-Grained Visual Classification of Air
 * 30 Manufacturers (e.g. Boeing)
 
 
-I modified the file structure a bit and have the re-structured code available for download at:
+Here's the modified file structure created by https://github.com/women-in-ai-ireland/May-2022-Aircraft-Image-Classification
 
 https://drive.google.com/file/d/1GMujsV2_kqMsbDAaEPgO-4hyYHkckjjW/view?usp=sharing
 
@@ -120,6 +132,7 @@ Here is the code you can run before training the model to see a snapshot of what
 <code> python -m code.PlotDatasetImages data/train  </code>
 
 ![image info](./pics/DifferentLooking.png)
+![image info](./pics/Easy_Hard.png)
 
 To visualize the results of our model on the validation data, you can plot the following:
 
